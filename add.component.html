@@ -1,0 +1,12 @@
+<div class="container">
+    <legend>Add A new Car</legend>
+    <div class="mb-3">
+        <label for="txId" class="form-label">Number Plate of Car</label>
+        <input type="number" [(ngModel)]="carForm.id" class="form-control" id="txtId"/>
+        </div>
+        <div class="mb-3">
+        <label for="txtName" class="form-label">Name of Car</label>
+        <input type="text" [(ngModel)]="carForm.name" class="form-control" id="txtName"/>
+      </div>
+      <button type="button" class="btn btn-dark" (click)="save()">Create</button>
+</div>
